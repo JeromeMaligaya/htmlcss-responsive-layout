@@ -36,6 +36,16 @@
     .info-list>ul li{
         flex-basis: calc(100% / 3 - (40px / 3));
     }
+
+    .btn.btn-social{
+        height: 35x;
+        width: 120px;
+    }
+    
+    .banner{
+        display: block;
+    }
+    
     
 }
 
@@ -82,5 +92,14 @@
 
     .info-list>ul li{
         flex-basis:100%
+    }
+
+    .btn.btn-social{
+        height: 35px;
+        width: 175px;
+    }
+
+    .btn.btn-social span:nth-child(2){
+        display: block;
     }
 }
