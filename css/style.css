@@ -8,21 +8,31 @@
 /*generics*/
 body{
     font-family: 'Montserrat' , sans-serif;
-    padding-top: 75px;
+    padding-top: 120px;
+    background-color: #eee;
 }
 
 header{
+    position: fixed; 
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 25px;
     min-height: 75px;
-    position: fixed;   
+      
 }
 
 h1{
     font-family: 'Nerko One', sans-serif;
-    font-size: 2.5rem;
+    font-size: 40px;
+}
+
+section{
+    padding: 0 25px;
 }
 
 /*utilities*/
@@ -32,13 +42,101 @@ h1{
     margin: 0 auto;
 }
 
-/*colors*/
+/*text*/
+/*
+.fnt-sz-xs{
+    font-size: 12px;
+}
 
+.fnt-sz-s{
+    font-size: 16px;
+}
+
+.fnt-sz-sm{
+    font-size: 20px;
+}
+
+.fnt-sz-m{
+    font-size: 24px;
+}
+
+.fnt-sz-ml{
+    font-size: 28px;
+}
+
+.bold900{
+    font-weight: 500;
+}
+
+.bold700{
+    font-weight: 700;
+}
+
+.bold900{
+    font-weight: 900;
+}
+/*colors*/
 .clr-yell{
     color: goldenrod;
+}
+
+.clr-white{
+    color: #fff;
 }
 
 /*bg*/
 .bg-white{
     background-color: white;
+}
+
+/*btn*/
+.btn{
+    border-radius: 20px; 
+    border-color: transparent; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-rate{
+    background-color: goldenrod;
+    min-height: 25px;
+    width: 50px;
+    padding: 5px 5px ;
+}
+
+.btn-social{
+    background-color: white;
+    padding: 2px;
+}
+
+
+
+/*info-receipt*/
+
+#info-receipt *:not(.title-receipt, .title-receipt>span){
+    font-size: 12px;
+}
+
+#info-receipt .title-receipt{
+    font-size: 24px;
+}
+
+.title-receipt>span{
+    display: none;
+}
+
+.rating :nth-child(2), .btn-rate span{
+    font-weight: 700;
+}
+
+.bar-title-receipt, .rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+.bar-title-receipt{
+    margin: 15px 0;
 }
