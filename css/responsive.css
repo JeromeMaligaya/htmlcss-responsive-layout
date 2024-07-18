@@ -1,13 +1,40 @@
 /*tablet*/
 @media screen and (min-width:769px){
 
+    /*#info-receipt *:not(.title-receipt, .title-receipt>span){
+        font-size: 14px;
+    }*/
+
     header{
         justify-content: flex-start;
+    }
+
+    section{
+        padding: 0 40px;
+    }
+
+    h1{
+        font-size: 50px;
     }
 
     .title-receipt>span{
         display: inline-block;
         
+    }
+
+    .card-video>iframe{
+        height: 415px;
+    }
+
+    .info-list>ul{
+        margin: 20px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .info-list>ul li{
+        flex-basis: calc(100% / 3 - (40px / 3));
     }
     
 }
@@ -19,5 +46,41 @@
 
 /*desktop*/
 @media screen and (min-width:993px){
+    h1{
+        font-size: 60px;
+    }
+
+    #info-receipt .card{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .card-video{
+        flex-basis: 70%;
+    }
     
+    .card-info{
+        flex-basis: 30%;
+    }
+
+    .info-box{
+        flex-basis: 20%;
+        margin: 0px;
+        
+    }
+    .info-list{
+        flex-basis: 80%;
+        padding-top: 20px;
+    }
+
+    .info-list>ul{
+        margin:0;
+        display: flex;
+        flex-wrap: column;
+        gap: 10px;
+    }
+
+    .info-list>ul li{
+        flex-basis:100%
+    }
 }

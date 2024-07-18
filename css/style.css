@@ -35,6 +35,10 @@ section{
     padding: 0 25px;
 }
 
+ul{
+    list-style-type: none;
+}
+
 /*utilities*/
 .container{
     width: 100%;
@@ -89,6 +93,10 @@ section{
     background-color: white;
 }
 
+.bg-grey{
+    background-color: #ddd;
+}
+
 /*btn*/
 .btn{
     border-radius: 20px; 
@@ -140,3 +148,89 @@ section{
 .bar-title-receipt{
     margin: 15px 0;
 }
+
+/*info-receipt > card*/
+#info-receipt .card{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-video{
+    flex-basis: 40%;
+}
+
+.card-info{
+    flex-basis: 60%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-video>iframe{
+    width: 100%;
+    display: block;
+    height: 250px;
+}
+
+.info-box{
+    flex-basis: 35%;
+    padding: 15px 10px;
+    margin: 20px;
+    
+}
+
+.row-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-box>.borderline{
+    width: 100%;
+    border: 1px solid #ccc;
+   
+} 
+
+.veg i{
+    margin-top: 10px;
+    margin-right: 3px;
+}
+
+.badge-purple{
+    background-color: rgb(127, 65, 171);
+    height: 16px;
+    width: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.a-info a{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.info-list{
+    flex-basis: 65%;
+}
+
+li{
+    display: flex;
+   
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.info-list li i{
+    color: goldenrod;
+}
+
+.info-list li span:nth-child(2){
+    font-weight: 700;
+}
+
+
+
