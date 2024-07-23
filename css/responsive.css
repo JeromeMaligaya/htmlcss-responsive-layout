@@ -1,5 +1,5 @@
 /*tablet*/
-@media screen and (min-width:769px){
+@media screen and (min-width:768px){
 
     /*#info-receipt *:not(.title-receipt, .title-receipt>span){
         font-size: 14px;
@@ -37,6 +37,8 @@
         flex-basis: calc(100% / 3 - (40px / 3));
     }
 
+    /* banner and adds */
+
     .btn.btn-social{
         height: 35x;
         width: 120px;
@@ -45,7 +47,24 @@
     .banner{
         display: block;
     }
-    
+    /* #presentation */
+    #presentation{
+        margin-top:10%;
+    }
+    #presentation p img{
+        float: left;
+        margin: 0 15px 5px 0;;
+    }
+
+    /* footer */
+    footer ul{
+        min-width: 450px;
+    }
+
+    footer ul li{
+        flex-basis: 20%;
+    }
+
     
 }
 
@@ -55,7 +74,7 @@
 
 
 /*desktop*/
-@media screen and (min-width:993px){
+@media screen and (min-width:992px){
     h1{
         font-size: 60px;
     }
@@ -94,6 +113,8 @@
         flex-basis:100%
     }
 
+    /* banner and adds */
+
     .btn.btn-social{
         height: 35px;
         width: 175px;
@@ -101,5 +122,19 @@
 
     .btn.btn-social span:nth-child(2){
         display: block;
+    }
+
+    /* footer */
+    .row-footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    address{
+        text-align: left;
+    }
+
+    footer ul{
+        align-items: center;
     }
 }
